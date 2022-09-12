@@ -1,0 +1,65 @@
+.movieArea {
+  margin-bottom: 30px;
+}
+
+.movieArea h2 {
+  margin-left: 30px;
+}
+
+.movieArea-list {
+  transition: all ease-in-out 0.5s;
+}
+
+.movieArea-listArea {
+  overflow-x: hidden;
+  padding-left: 30px;
+}
+.movieArea-item {
+  display: inline-block;
+  width: 150px;
+}
+
+.movieArea-item img {
+  width: 100%;
+  transform: scale(0.92);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.movieArea-item img:hover {
+  transform: scale(0.98);
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+}
+.movieArea-left, .movieArea-right {
+  font-size: 30px;
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  z-index: 99;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.movieArea-left:hover, .movieArea-right:hover {
+  background-color: #141414;
+  opacity: 0.8;
+}
+
+.movieArea-left {
+  left: 0;
+  opacity: 0.5;
+}
+
+.movieArea-right {
+  right: 0;
+}
+
+@media (max-width: 760px) {
+  .movieArea-left, .movieArea-right {
+    opacity: 1;
+  }
+}
